@@ -6,3 +6,5 @@ data/wsb_comments_raw.csv
 data/*.zip
 # macOS files
 .DS_store
+# credentials
+cred/*
