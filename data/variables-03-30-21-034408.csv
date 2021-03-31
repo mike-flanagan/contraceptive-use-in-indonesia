@@ -1,0 +1,2 @@
+﻿survey_idno,sid,file_id,vid,name,labl,var_intrvl,var_dcml,var_wgt,var_start_pos,var_end_pos,var_width,var_imputation,var_security,var_respunit,var_qstn_preqtxt,var_qstn_qstnlit,var_qstn_postqtxt,var_qstn_ivulnstr,var_universe,var_sumstat,var_txt,var_catgry,var_codinstr,var_concept,var_format,var_notes
+IDN_1987_DHS_v01_M,1398,F5,V81,bidx,"Birth column number",discrete,0,,,,,,,,,,,,,[],,[],,[],"{""type"":""numeric"",""schema"":""other"",""category"":null,""name"":null}",
