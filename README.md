@@ -1,7 +1,7 @@
 # Contraceptive Method Public Health Project
 In this project, we examine a dataset of contraceptive methods used by married Indonesian women to see insights and predictions can be made based on various demographic and socioeconomic variables.
 
-![contraception methods](contraception methods.jpg)
+![contraception methods](contraception_methods.jpg)
 
 The goal was to make informed recommendations to public health officials in order to help them target their educational programs to women who are less likely to be using contraception. This can have an impact in reducing unwanted pregnancy, abortion rates, birth complications, infant and maternal mortality rates.
 
