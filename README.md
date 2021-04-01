@@ -30,7 +30,7 @@ Contraceptive method used| class attribute |  1 = No-use <br> 2 = Long-term meth
 We leveraged machine learning models from [Scikit-learn](https://scikit-learn.org/stable/) to determine the relationship between the features and the target variable. We also performed statistical analysis via [SciPy Stats](https://docs.scipy.org/doc/scipy/reference/stats.html) to further make inferences on the data.
 
 # Findings
-![Distribution by Childcount](visualizations/Distribution by Childcount.png)
+![Distribution by Childcount](visualizations/Distribution%20by%20Childcount.png)
 
 # Conclusions
 
