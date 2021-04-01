@@ -1,7 +1,7 @@
 # Contraceptive Method Public Health Project
 In this project, we examine a dataset of contraceptive methods used by married Indonesian women to see insights and predictions can be made based on various demographic and socioeconomic variables.
 
-![contraception methods](contraception methods.jpg)
+![contraception methods](contraception_methods.jpg)
 
 The goal was to make informed recommendations to public health officials in order to help them target their educational programs to women who are less likely to be using contraception. This can have an impact in reducing unwanted pregnancy, abortion rates, birth complications, infant and maternal mortality rates.
 
@@ -30,6 +30,7 @@ Contraceptive method used| class attribute |  1 = No-use <br> 2 = Long-term meth
 We leveraged machine learning models from [Scikit-learn](https://scikit-learn.org/stable/) to determine the relationship between the features and the target variable. We also performed statistical analysis via [SciPy Stats](https://docs.scipy.org/doc/scipy/reference/stats.html) to further make inferences on the data.
 
 # Findings
+![Distribution by Childcount](visualizations/Distribution%20by%20Childcount.png)
 
 # Conclusions
 
