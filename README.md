@@ -29,8 +29,6 @@ Feature Name             |  Type           |     Values
 :------------------------|:----------------|-------------:  
 Contraceptive method used| class attribute |  1 = No-use <br> 2 = Long-term method <br> 3 = Short-term method  
   
-<img src="images/readme_contraception_methods.jpg" alt="contraception methods" width="800"/>
-  
 ## Methods  
 Our methodology implements the CRISP-DM model for exploratory data analysis, cleaning, modeling, and evaluation.  
 We leveraged machine learning models from [Scikit-learn](https://scikit-learn.org/stable/) to determine the relationship between the features and the target variable. We also performed statistical analysis via [SciPy Stats](https://docs.scipy.org/doc/scipy/reference/stats.html) to further make inferences on the data.  
