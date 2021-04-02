@@ -1,4 +1,4 @@
-# Contraceptive Method Public Health Project  
+# Contraceptive Method Choices of Married Women in Indonesia
   
 ## Overview  
 In this project, we examine a dataset of contraceptive methods used by married Indonesian women to see what insights and predictions can be made based on various demographic and socioeconomic variables.  
@@ -34,10 +34,11 @@ Our methodology implements the CRISP-DM model for exploratory data analysis, cle
 We leveraged machine learning models from [Scikit-learn](https://scikit-learn.org/stable/) to determine the relationship between the features and the target variable. We also performed statistical analysis via [SciPy Stats](https://docs.scipy.org/doc/scipy/reference/stats.html) to further make inferences on the data.  
 Other tools used include Python, NumPy, and Pandas. Visualizations were created with MatPlotLib and Seaborn.  
   
-## Findings
-![Distribution by Childcount](images/Distribution%20by%20Childcount.png)
-
-## Conclusions  
+## Conclusion
+After running model feature selection, it appears that age and number of children are a strong indicator for a woman’s use of contraception.  
+Our best model performed with and average recall of .64, F1 score of .65, and ROC-AUC  of .69.  
+The model also suggests that a woman’s education is a strong indicator of the likelihood for her to select a long-term contraceptive method.  
+It would be beneficial to direct public health initiative around these factors.
   
 ## Further Actions  
 After submitting an application, we have received authorization from [the Demographic and Health Surveys program (DHS)](https://www.dhsprogram.com/Countries/Country-Main.cfm?ctry_id=17&c=Indonesia&Country=Indonesia&cn=&r=4) to access the original NICPS full datasets, which includes more attributes and a much larger sample size.  
@@ -45,7 +46,9 @@ After submitting an application, we have received authorization from [the Demogr
 The original datasets will allow to find deeper insights, as well as test our model on the population of Indonesia in subsequent years.  
   
 We would like to see what other targets may be predicted on to make further public health policy suggestions.  
-    
+  
+We would like to further optimize our model for a higher average recall, and continue to clean, implement features from, and predict on data from subsequent years, and evaluate against populations of other contries.  
+      
 ## Index  
 - **code/** — directory containing python code file
 - **crisp_dm_process/** — directory for initial EDA and model notebook files  
