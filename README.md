@@ -36,7 +36,7 @@ Other tools used include Python, NumPy, and Pandas. Visualizations were created 
   
 ## Conclusion
 After running model feature selection, it appears that age and number of children are a strong indicator for a woman’s use of contraception.  
-Our best model performed with and average recall of .64, F1 score of .65, and ROC-AUC  of .69.  
+Our best model performed with and average recall of .65, F1 score of .65, and ROC-AUC  of .69.  
 The model also suggests that a woman’s education is a strong indicator of the likelihood for her to select a long-term contraceptive method.  
 It would be beneficial to direct public health initiative around these factors.
   
