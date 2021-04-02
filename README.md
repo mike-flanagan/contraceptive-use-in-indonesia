@@ -40,17 +40,6 @@ Other tools used include Python, NumPy, and Pandas. Visualizations were created 
 ## Conclusions  
 ## Further Actions  
   
-<div align="center";>Authors  
-  <div align="center";>Alexander Xin & Mike Flanagan  
-    
-[GitHub](https://github.com/eggrollofchaos) | [LinkedIn](https://linkedin.com/in/eggrollofchaos)  
-[GitHub](https://github.com/mike-flanagan/) | [LinkedIn](https://www.linkedin.com/in/mike-flanagan-data/)
-  
-  
-  
-![image](https://user-images.githubusercontent.com/61798935/110971972-7d0f8900-8329-11eb-92f4-1c9a6a4c4c62.png)  
-  
-<div align="center";>Photo by Luca Micheli on Unsplash</div>  
   
 ## Index  
 - **code/** — directory containing python code file
@@ -63,3 +52,19 @@ Other tools used include Python, NumPy, and Pandas. Visualizations were created 
   - additional images for notebooks, README, and presentation slides
 - **Contraception_Indonesia_FINAL.ipynb** — primary project notebook  
 - **README.md**  
+  
+## Bibliography  
+1. Dataset Origin:  
+  
+                 the 1987 National Indonesia  
+                Contraceptive Prevalence Survey  
+2. Creator: Tjen-Sien Lim (limt@stat.wisc.edu)  
+3. Donor:   Tjen-Sien Lim (limt@stat.wisc.edu)  
+4. Date:    June 7, 1997
+5. Web Source: https://archive.ics.uci.edu/ml/datasets/Contraceptive+Method+Choice                
+  
+<div align="center";>Authors  
+  <div align="center";>Alexander Xin & Mike Flanagan  
+    
+[GitHub](https://github.com/eggrollofchaos) | [LinkedIn](https://linkedin.com/in/eggrollofchaos)  
+[GitHub](https://github.com/mike-flanagan/) | [LinkedIn](https://www.linkedin.com/in/mike-flanagan-data/)
