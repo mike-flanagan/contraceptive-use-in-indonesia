@@ -23,7 +23,7 @@ def csv_write(ticker, df, start, end, intra = ''):
 def model_stats(features, model, model_type, X_test, y_test):
     y_pred = model.predict(X_test)
     y_prob = model.predict_proba(X_test)
-    print('Classifier ', model_type)
+    print('Classifier: ', model_type)
     print('Num features: ', features.size)
     print('Model score: ', model.score(X_test, y_test))
     print('Accuracy score: ', accuracy_score(y_test, y_pred))
@@ -33,9 +33,12 @@ def model_stats(features, model, model_type, X_test, y_test):
     print('Cross validation score: ', cross_val_score(model, X_test, y_test, cv=5) )
     print('Classification Report:')
     print(classification_report(y_test, y_pred))
-    fig, ax = plt.subplots(figsize = [6,8])
+    fig, ax = plt.subplots(figsize = [6,5])
     plot_confusion_matrix(model, X_test, y_test, ax = ax)
 #     plot_roc_curve(model, X_test_sc, y_test, ax = ax[1])
+    ax.set_title(f'{model_type} Confusion Matrix', fontdict = {'fontsize': 14})
+    # ax.set_xlabel(xlabel, fontdict = {'fontsize': 12})
+    # ax.set_ylabel(f'{model_type} Confusion Matrix', fontdict = {'fontsize': 12})
     macro_roc_auc_ovo = roc_auc_score(y_test, y_prob, multi_class="ovo",
                                   average="macro")
     weighted_roc_auc_ovo = roc_auc_score(y_test, y_prob, multi_class="ovo",
