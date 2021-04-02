@@ -10,17 +10,11 @@ import seaborn as sns
 import numpy as np
 import pandas as pd
 
-def csv_write(ticker, df, start, end, intra = ''):
-    '''Given a target filepath and a list of fields,
-    create a new CSV file and set Headers
+def model_stats(features, model, model_type, X_test, y_test, binary='False'):
     '''
-    df.columns = ['open', 'high', 'low', 'close', 'change', 'volume']
-    if intra == 'y':
-        intra = 'intra'
-    csv_filepath = f'data/{ticker}_{intra}_{start}_{end}.csv'
-    df.to_csv(csv_filepath, mode='w')
-
-def model_stats(features, model, model_type, X_test, y_test):
+    Taking in a list of columns, a model, an X matrix, a y array, predicts
+    labels and outputs model performance metrics.
+    '''
     y_pred = model.predict(X_test)
     y_prob = model.predict_proba(X_test)
     print('Classifier: ', model_type)
@@ -33,26 +27,32 @@ def model_stats(features, model, model_type, X_test, y_test):
     print('Cross validation score: ', cross_val_score(model, X_test, y_test, cv=5) )
     print('Classification Report:')
     print(classification_report(y_test, y_pred))
-    fig, ax = plt.subplots(figsize = [6,5])
-    plot_confusion_matrix(model, X_test, y_test, ax = ax)
-#     plot_roc_curve(model, X_test_sc, y_test, ax = ax[1])
-    ax.set_title(f'{model_type} Confusion Matrix', fontdict = {'fontsize': 14})
     # ax.set_xlabel(xlabel, fontdict = {'fontsize': 12})
     # ax.set_ylabel(f'{model_type} Confusion Matrix', fontdict = {'fontsize': 12})
-    macro_roc_auc_ovo = roc_auc_score(y_test, y_prob, multi_class="ovo",
-                                  average="macro")
-    weighted_roc_auc_ovo = roc_auc_score(y_test, y_prob, multi_class="ovo",
-                                         average="weighted")
-    macro_roc_auc_ovr = roc_auc_score(y_test, y_prob, multi_class="ovr",
+    if binary == 'False':
+        macro_roc_auc_ovo = roc_auc_score(y_test, y_prob, multi_class="ovo",
                                       average="macro")
-    weighted_roc_auc_ovr = roc_auc_score(y_test, y_prob, multi_class="ovr",
-                                         average="weighted")
-    print("One-vs-One ROC AUC scores:\n{:.6f} (macro),\n{:.6f} "
-          "(weighted by prevalence)"
-          .format(macro_roc_auc_ovo, weighted_roc_auc_ovo))
-    print("One-vs-Rest ROC AUC scores:\n{:.6f} (macro),\n{:.6f} "
-          "(weighted by prevalence)"
-          .format(macro_roc_auc_ovr, weighted_roc_auc_ovr))
+        weighted_roc_auc_ovo = roc_auc_score(y_test, y_prob, multi_class="ovo",
+                                             average="weighted")
+        macro_roc_auc_ovr = roc_auc_score(y_test, y_prob, multi_class="ovr",
+                                          average="macro")
+        weighted_roc_auc_ovr = roc_auc_score(y_test, y_prob, multi_class="ovr",
+                                             average="weighted")
+        print("One-vs-One ROC AUC scores:\n{:.6f} (macro),\n{:.6f} "
+              "(weighted by prevalence)"
+              .format(macro_roc_auc_ovo, weighted_roc_auc_ovo))
+        print("One-vs-Rest ROC AUC scores:\n{:.6f} (macro),\n{:.6f} "
+              "(weighted by prevalence)"
+              .format(macro_roc_auc_ovr, weighted_roc_auc_ovr))
+        fig, ax = plt.subplots(figsize = [6,5])
+        plot_confusion_matrix(model, X_test, y_test, ax = ax)
+        ax.set_title(f'{model_type} Confusion Matrix', fontdict = {'fontsize': 14})
+    elif binary == 'True':
+        fig, ax = plt.subplots(2, 1, figsize = [6,10])
+        plot_confusion_matrix(model, X_test, y_test, ax = ax[0])
+        ax[0].set_title(f'{model_type} Confusion Matrix', fontdict = {'fontsize': 14})
+        plot_roc_curve(model, X_test, y_test, ax = ax[1])
+        ax[1].set_title(f'{model_type} Receiver Operating Characteristic Curve', fontdict = {'fontsize': 14})
 
 def dummy_transform_scale(X, y, to_dummy, rs = 729):
     # to_dummy = ['edu', 'hus_edu', 'chil', 'hus_ocu', 'sol']
