@@ -1,7 +1,7 @@
 # Contraceptive Method Public Health Project  
   
 ## Overview  
-In this project, we examine a dataset of contraceptive methods used by married Indonesian women to see insights and predictions can be made based on various demographic and socioeconomic variables.  
+In this project, we examine a dataset of contraceptive methods used by married Indonesian women to see what insights and predictions can be made based on various demographic and socioeconomic variables.  
 
 ![family_planning](images/indonesian-family.jpeg)  
   
