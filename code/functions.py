@@ -27,7 +27,6 @@ def model_stats(features, model, model_type, X_test, y_test, binary = False):
     print('Cross validation score: ', cross_val_score(model, X_test, y_test, cv=5) )
     print('Classification Report:')
     print(classification_report(y_test, y_pred))
-    # ax.set_xlabel(xlabel, fontdict = {'fontsize': 12})
     # ax.set_ylabel(f'{model_type} Confusion Matrix', fontdict = {'fontsize': 12})
     if binary == False:
         macro_roc_auc_ovo = roc_auc_score(y_test, y_prob, multi_class="ovo",
