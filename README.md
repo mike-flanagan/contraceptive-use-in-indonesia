@@ -66,5 +66,5 @@ Other tools used include Python, NumPy, and Pandas. Visualizations were created 
 <div align="center";>Authors  
   <div align="center";>Alexander Xin & Mike Flanagan  
     
-[GitHub](https://github.com/eggrollofchaos) | [GitHub](https://github.com/mike-flanagan/) 
+[GitHub](https://github.com/eggrollofchaos) | [GitHub](https://github.com/mike-flanagan/)  
 [LinkedIn](https://linkedin.com/in/eggrollofchaos) | [LinkedIn](https://www.linkedin.com/in/mike-flanagan-data/)
