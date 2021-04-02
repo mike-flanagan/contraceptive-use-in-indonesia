@@ -10,7 +10,7 @@ import seaborn as sns
 import numpy as np
 import pandas as pd
 
-def model_stats(features, model, model_type, X_test, y_test, binary='False'):
+def model_stats(features, model, model_type, X_test, y_test, binary = False):
     '''
     Taking in a list of columns, a model, an X matrix, a y array, predicts
     labels and outputs model performance metrics.
@@ -29,7 +29,7 @@ def model_stats(features, model, model_type, X_test, y_test, binary='False'):
     print(classification_report(y_test, y_pred))
     # ax.set_xlabel(xlabel, fontdict = {'fontsize': 12})
     # ax.set_ylabel(f'{model_type} Confusion Matrix', fontdict = {'fontsize': 12})
-    if binary == 'False':
+    if binary == False:
         macro_roc_auc_ovo = roc_auc_score(y_test, y_prob, multi_class="ovo",
                                       average="macro")
         weighted_roc_auc_ovo = roc_auc_score(y_test, y_prob, multi_class="ovo",
@@ -47,7 +47,7 @@ def model_stats(features, model, model_type, X_test, y_test, binary='False'):
         fig, ax = plt.subplots(figsize = [6,5])
         plot_confusion_matrix(model, X_test, y_test, ax = ax)
         ax.set_title(f'{model_type} Confusion Matrix', fontdict = {'fontsize': 14})
-    elif binary == 'True':
+    elif binary == True:
         fig, ax = plt.subplots(2, 1, figsize = [6,10])
         plot_confusion_matrix(model, X_test, y_test, ax = ax[0])
         ax[0].set_title(f'{model_type} Confusion Matrix', fontdict = {'fontsize': 14})
