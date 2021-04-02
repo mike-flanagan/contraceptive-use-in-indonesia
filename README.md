@@ -1,7 +1,7 @@
 # Contraceptive Method Public Health Project  
   
 ## Overview  
-In this project, we examine a dataset of contraceptive methods used by married Indonesian women to see insights and predictions can be made based on various demographic and socioeconomic variables.  
+In this project, we examine a dataset of contraceptive methods used by married Indonesian women to see what insights and predictions can be made based on various demographic and socioeconomic variables.  
 
 ![family_planning](images/indonesian-family.jpeg)  
   
@@ -38,9 +38,14 @@ Other tools used include Python, NumPy, and Pandas. Visualizations were created 
 ![Distribution by Childcount](images/Distribution%20by%20Childcount.png)
 
 ## Conclusions  
+  
 ## Further Actions  
+After submitting an application, we have received authorization from [the Demographic and Health Surveys program (DHS)](https://www.dhsprogram.com/Countries/Country-Main.cfm?ctry_id=17&c=Indonesia&Country=Indonesia&cn=&r=4) to access the original NICPS full datasets, which includes more attributes and a much larger sample size.  
   
+The original datasets will allow to find deeper insights, as well as test our model on the population of Indonesia in subsequent years.  
   
+We would like to see what other targets may be predicted on to make further public health policy suggestions.  
+    
 ## Index  
 - **code/** — directory containing python code file
 - **crisp_dm_process/** — directory for initial EDA and model notebook files  
