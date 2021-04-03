@@ -10,10 +10,10 @@ import seaborn as sns
 import numpy as np
 import pandas as pd
 
-def feature_plot(df, ind, dep, plot_type, xlabel, xlog = 'n', ylog = 'n', color = u'#1f77b4'):
-    ylabel = f'Contraception Method'
+def feature_plot(df, ind, dep, plot_type, xlabel, ylabel = 'Contraception Method', xlog = 'n', ylog = 'n', color = u'#1f77b4'):
+    ylabel = ylabel
     title = f'{ylabel} vs {xlabel}'
-    file_name = f'{xlabel}.png'
+    file_name = f'{ylabel} vs {xlabel}.png'
     fig, ax = plt.subplots(figsize = [12,8])
     if plot_type == 'scatter':
         sns_obj = sns.scatterplot(data = df, x=ind, y=dep, ax=ax, color = color)
