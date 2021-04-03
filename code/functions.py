@@ -54,6 +54,12 @@ def model_stats(features, model, model_type, X_test, y_test, binary = False):
         ax[1].set_title(f'{model_type} Receiver Operating Characteristic Curve', fontdict = {'fontsize': 14})
 
 def dummy_transform_scale(X, y, to_dummy, rs = 729):
+    '''
+    Taking a matrix or dataframe of features X, a target scalar y, and a list of
+    features to dummy, performs dummying, train_test_split, and RobustScaler
+    fit/tranformation; returns a dummified dataframe X_with_dums, transformed
+    X_train, X_test, y_train, and y_test.
+    '''
     # to_dummy = ['edu', 'hus_edu', 'chil', 'hus_ocu', 'sol']
     X_with_dums = pd.get_dummies(X, columns=to_dummy, drop_first=True)
     # X_with_dums.shape
