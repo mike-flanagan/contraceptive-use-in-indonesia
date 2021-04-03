@@ -10,6 +10,25 @@ import seaborn as sns
 import numpy as np
 import pandas as pd
 
+def feature_plot(df, ind, dep, plot_type, xlabel, xlog = 'n', ylog = 'n', color = u'#1f77b4'):
+    ylabel = f'Contraception Method'
+    title = f'{ylabel} vs {xlabel}'
+    file_name = f'{xlabel}.png'
+    fig, ax = plt.subplots(figsize = [12,8])
+    if plot_type == 'scatter':
+        sns_obj = sns.scatterplot(data = df, x=ind, y=dep, ax=ax, color = color)
+    elif plot_type == 'line':
+        sns_obj = sns.lineplot(data = df, x=ind, y=dep, color = color)
+    if xlog == 'y':
+        set_x_log(sns_obj, ax)
+    if ylog == 'y':
+        set_y_log(sns_obj, ax)
+    # what color is u'#1f77b4'? what color is None?
+    ax.set_title(title, fontdict = {'fontsize': 14})
+    ax.set_xlabel(xlabel, fontdict = {'fontsize': 12})
+    ax.set_ylabel(ylabel, fontdict = {'fontsize': 12})
+    plt.savefig(f'../images/{file_name}')
+
 def model_stats(features, model, model_type, X_test, y_test, binary = False):
     '''
     Taking in a list of columns, a model, an X matrix, a y array, predicts
