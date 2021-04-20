@@ -50,15 +50,16 @@ We would like to see what other targets may be predicted on to make further publ
 We would like to further optimize our model for a higher average recall, and continue to clean, implement features from, and predict on data from subsequent years, and evaluate against populations of other contries.  
       
 ## Index  
-- **code/** — directory containing python code file
+- **code/** — directory containing python helper functions file
 - **crisp_dm_process/** — directory for initial EDA and model notebook files  
-- **data/** — directory of project datasets
   - **Initial_EDA** — notebook file that includes thorough initial data exploration, insights, and takeaways  
   - **Model_Evaluation** — notebook file that includes modeling trials and process.
+- **data/** — directory of project datasets
 - **images/** — directory containing the following...  
   - image exports of visualizations  
   - additional images for notebooks, README, and presentation slides
 - **Contraception_Indonesia_FINAL.ipynb** — primary project notebook  
+- **Contraception_Indonesia_Presentation.pdf** - presentation slides PDF
 - **README.md**  
   
 ## Bibliography  
@@ -75,4 +76,4 @@ We would like to further optimize our model for a higher average recall, and con
   <div align="center";>Alexander Xin & Mike Flanagan  
     
 [GitHub](https://github.com/eggrollofchaos) | [GitHub](https://github.com/mike-flanagan/)  
-[LinkedIn](https://linkedin.com/in/eggrollofchaos) | [LinkedIn](https://www.linkedin.com/in/mike-flanagan-data/)
+[LinkedIn](https://linkedin.com/in/waximus) | [LinkedIn](https://www.linkedin.com/in/mike-flanagan-data/)
