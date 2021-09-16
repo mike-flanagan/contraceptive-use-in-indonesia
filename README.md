@@ -70,7 +70,7 @@ Our best model uses an XGBClassifier:
 ![1987_results](images/xgb_output_final_1987.png)
 
 Running against the cleaned and prepared 2017 data, we were able to obtain acceptable results:
-![2017_results](images/xgb_output_final.png)
+![2017_results](images/xgb_output_final_2017.png)
   
 ## Conclusion
 Our best model performed well, with a recall of .79, F1 score of .79, and ROC-AUC of .78.  
