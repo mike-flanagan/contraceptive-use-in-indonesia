@@ -9,7 +9,7 @@ In this project, we examine a dataset of contraceptive methods used by married I
 To make informed recommendations for further action to public health officials in order to improve the welfare of mothers and children. We hope to have an impact in empowering healthcare autonomy of female citizens in Indonesia, while reducing unwanted pregnancy, abortion rates, birth complications, & infant and maternal mortality rates.  
   
 ## Data  
-Our [dataset](https://archive.ics.uci.edu/ml/datasets/Contraceptive+Method+Choice) comes from the [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php), used with permission.  
+Our [dataset](https://archive.ics.uci.edu/ml/datasets/Contraceptive+Method+Choice) comes from the [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php), used with permission.  Note that the full datasets are not included in this repository as they require additional permission to publish.
   
 ### Features Examined  
 Feature Name             |  Type         |     Values  
