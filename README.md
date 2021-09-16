@@ -73,10 +73,9 @@ Running against the cleaned and prepared 2017 data, we were able to obtain accep
 ![2017_results](images/xgb_output_final.png)
   
 ## Conclusion
-After running model feature selection, it appears that `age` and `# of children` are a strong indicator for a woman’s use of contraception.  
-Our best model performed well with a recall of .79, F1 score of .79, and ROC-AUC of .78.  
+Our best model performed well, with a recall of .79, F1 score of .79, and ROC-AUC of .78.  
 Testing our trained classifer on 2017 data yielded promising results: recall of .65, F1 score of .65, and ROC-AUC of .69.  
-The model also suggests that a woman’s `education` and `media exposure` are strong indicators of the likelihood for her to use contraception.  
+Our analysis also suggests that a woman’s `education` and `media exposure` are strong indicators of the likelihood for her to use contraception.  
 It would be beneficial to direct public health initiative around these factors.
   
 ## Further Actions  
