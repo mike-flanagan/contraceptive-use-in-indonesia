@@ -48,19 +48,21 @@ The original datasets will allow us to find deeper insights, as well as test our
 We would like to see what other targets may be predicted on to make further public health policy suggestions.  
   
 We would like to further optimize our model for a higher average recall, and continue to clean, implement features from, and predict on data from subsequent years, as well as evaluate against populations of other contries.  
-      
-## Index  
-- **code/** — directory containing python helper functions file
-- **crisp_dm_process/** — directory for initial EDA and model notebook files  
-  - **Initial_EDA** — notebook file that includes thorough initial data exploration, insights, and takeaways  
-  - **Model_Evaluation** — notebook file that includes modeling trials and process.
-- **data/** — directory of project datasets
-- **images/** — directory containing the following...  
-  - image exports of visualizations  
-  - additional images for notebooks, README, and presentation slides
-- **Contraception_Indonesia_FINAL.ipynb** — primary project notebook  
-- **Contraception_Indonesia_Presentation.pdf** - presentation slides PDF
-- **README.md**  
+
+## Repository Structure
+    .
+    ├── code/                                     # python helper functions file
+        ├── functions.py                          # helper functions
+    ├── crisp_dm_process/                         # initial EDA and model notebook files 
+        ├── Initial_EDA.ipynb                     # notebook file with data exploration, insights, and takeaways  
+        ├── Model_Evaluation.ipynb                # notebook file for modeling trials and process.
+    ├── data/                                     # project datasets
+    ├── images/                                   # visualizations; images for notebooks, README, and presentation slides
+    ├── Contraception_Indonesia_FINAL.ipynb       # primary project notebook  
+    ├── Contraception_Indonesia_Presentation.pdf  # presentation slides
+    ├── README.md                                 # this readme
+    └── relevant_resources/                       # additional resources for 1987 data
+
   
 ## Bibliography  
 1. Dataset Origin:  
