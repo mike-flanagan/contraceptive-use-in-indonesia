@@ -66,7 +66,7 @@ Our other engineered feature - Wife More Educated (than the husband) - showed a 
   
 ## Modeling
 We tested Logistic Regression, Random Forest, and XGBoost; tested dummying the `children` variable; tested Tomek Links resampling; and tuned hyperparameters via GridSearchCV.
-Our best model uses an XGBClassifier:
+Our best model uses an XGBClassifier:  
 ![1987_results](images/xgb_output_final_1987.png)
 
 Running against the cleaned and prepared 2017 data, we were able to obtain acceptable results:
