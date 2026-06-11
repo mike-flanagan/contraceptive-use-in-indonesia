@@ -12,3 +12,7 @@ data/ID*/
 cred/*
 # all .icloud files
 #.icloud
+
+# Local/cache artifacts
+.DS_Store
+__pycache__/
